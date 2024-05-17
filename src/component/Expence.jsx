@@ -16,6 +16,7 @@ function Expence(){
     function AddItems(){
         if(expence){
         setname("");
+        setItem("");
         }
         setExpence([...expence,[name,item]]);  
     }
@@ -66,7 +67,7 @@ function Expence(){
        {
          expence.map((data,index)=>(
             <>
-            <TrackExpence key={index} data={data} name={name} item={item} 
+            <TrackExpence key={index} data={data} name={name}
             index={index} 
             Delete={Delete} 
         />

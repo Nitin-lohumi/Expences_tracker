@@ -1,4 +1,4 @@
-function TrackExpence({data,item,key,index,Delete}){
+function TrackExpence({data,key,index,Delete}){
     return(
         <>
         <div className="TrackExpence">
