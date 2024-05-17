@@ -5,7 +5,7 @@ function TrackExpence({data,key,index,Delete}){
             <div className="track_1">
                <div className="track_2">
                 <h2>{data[0]} -</h2>
-                <p>rs. {data[1]}</p>
+                <p>rs. {data[1]+"/kg"}</p>
                 <p>{key}</p>
                </div>
             <button onClick={() => Delete(index)}>

@@ -50,14 +50,14 @@ function Expence(){
         <input type="text"  
         value={name}
          onChange={nameChange}  
-        placeholder="Enter your name "/>
+        placeholder="Enter item name "/>
        </div>
        <div className="Amount"> 
         <label htmlFor="">Item Amount</label>
         <input type="text" 
         value={item}
         onChange={itemsChange}
-        placeholder="Enter your amount"/>
+        placeholder="Enter  amount"/>
        </div>
        <div className="btn">
         <button className="btn1 " onClick={AddItems}>Add Item</button>
@@ -65,14 +65,15 @@ function Expence(){
        </div>
        </div>
        {
-         expence.map((data,index)=>(
+         expence.map((data,index)=>{
+            return(
             <>
             <TrackExpence key={index} data={data} name={name}
             index={index} 
             Delete={Delete} 
         />
             </>
-         ))
+         )})
        }
         </>
     )
