@@ -13,12 +13,13 @@ function Expence(){
     const [expence,setExpence] =useState(getLocalData);
     const [name,setname] = useState('');
     const [item,setItem]= useState('');
-    function AddItems(){
+     function AddItems(){
         if(expence){
         setname("");
         setItem("");
         }
         setExpence([...expence,[name,item]]);  
+        setAdding(true);
     }
     function nameChange(e){
      setname(e.target.value);  
@@ -74,6 +75,7 @@ function Expence(){
         />
             </>
          )})
+
        }
         </>
     )
